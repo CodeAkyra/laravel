@@ -7,8 +7,8 @@ use App\Http\Controllers\RouteController;
 //     return view('layout');
 // });
 
-Route::get('/home', [RouteController::class, 'home']);
-Route::get('/about', [RouteController::class, 'about']);
-
 // Route::get('/home', 'RouteController@home');
-// Route::get('/about', 'RouteController@about');
+// Route::get('/calculator', 'RouteController@about');
+
+Route::get('/home', [RouteController::class, 'home']);
+Route::get('/calculator', [RouteController::class, 'calculator']);

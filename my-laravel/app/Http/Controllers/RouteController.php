@@ -10,8 +10,8 @@ class RouteController extends Controller
     {
         return view('home');
     }
-    function about()
+    function calculator()
     {
-        return view('about');
+        return view('calculator');
     }
 }
