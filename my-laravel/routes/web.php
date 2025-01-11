@@ -15,10 +15,6 @@ use App\Http\Controllers\UserController;
 // Route::get('/calculator', [RouteController::class, 'calculator']);
 
 
-Route::get('/', function () {
-    return view('home');
-});
-
 // Route::post('/register', function () {
 //     return 'Thank you';
 // });
@@ -28,6 +24,16 @@ Route::post('/register', [UserController::class, 'register']);
 Route::post('/logout', [UserController::class, 'logout']);
 
 
-Route::get('/content', function () {
-    return view('content');
+// LARAVEL 8 HOURS COURSE
+
+Route::get('/', function () {
+    return view('home');
+});
+
+Route::get('/about', function () {
+    return view('about');
+});
+
+Route::get('/contact', function () {
+    return view('contact');
 });
