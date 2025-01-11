@@ -15,7 +15,11 @@
         <a href="/contact">Contact</a>
     </nav>
 
-    <?php echo $slot ?>
+    {{-- They're both the same, but {{ $slot is more common for Blade }} --}}
+    {{-- < ?php echo $slot ?>--}}
+    {{-- {{ $slot }} --}}
+
+    {{ $slot }}
 </body>
 
 </html>
